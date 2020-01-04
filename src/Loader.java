@@ -3,9 +3,9 @@ import java.util.List;
 
 public class Loader {
     public static void main(String[] args) {
-        Company companyFirst = new Company(1000001.0, 15000.0, 30000.0);
+        Company companyFirst = new Company(1000001.0);
 
-        Operator operator1 = new Operator(companyFirst);
+        Operator operator1 = new Operator(companyFirst, 10000.0);
         Manager manager1 = new Manager(companyFirst, 35000.0);
         TopManager topManager1 = new TopManager(companyFirst, 150000.0);
 

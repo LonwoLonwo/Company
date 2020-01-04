@@ -6,13 +6,9 @@ public class Company
 {
     private double income;
     public ArrayList<Employee> employees = new ArrayList<>();
-    protected double operatorSalary;
-    protected double managerSalary;
 
-    public Company(double income, double operatorSalary, double managerSalary){
+    public Company(double income){
         this.income = income;
-        this.operatorSalary = operatorSalary;
-        this.managerSalary = managerSalary;
     }
 
     public double getIncome() {

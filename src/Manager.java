@@ -5,11 +5,11 @@ public class Manager extends EmployeeImpl {
     public Manager(Company company, double managerProfit) {
         super(company);
         this.managerProfit = managerProfit;
-        this.managerSalary = company.managerSalary + Math.random()*10000;
+        managerSalary = 30000.0 + Math.random()*10000;
     }
 
     @Override
     public double getMonthSalary() {
-        return company.managerSalary + managerProfit*0.05;
+        return managerSalary + managerProfit*0.05;
     }
 }
